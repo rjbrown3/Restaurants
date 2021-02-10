@@ -27,9 +27,9 @@ namespace Restaurants.Controllers
                 #nullable enable
                 string? favDish = tr.FavoriteDish ?? "It's all tasty!";         // if favorite dish is null, set to "It's all tasty!"
 
-                TopRestaurantList.Add($"#{tr.RestaurantRank}: {tr.RestaurantName} \n " +
-                    $"Favorite Dish: {favDish} \n " +
-                    $"Address: {tr.Address} Phone: {tr.RestaurantPhone} \n " +
+                TopRestaurantList.Add($"#{tr.RestaurantRank}: {tr.RestaurantName} <br/> "+
+                    $"Favorite Dish: {favDish} <br/> " +
+                    $"Address: {tr.Address} Phone: {tr.RestaurantPhone} <br/> " +
                     $"Website: {tr.WebsiteLink}");
             }
 
