@@ -24,6 +24,7 @@ namespace Restaurants.Controllers
 
             foreach (TopRestaurants tr in TopRestaurants.GetTopRestaurants())
             {
+                #nullable enable
                 string? favDish = tr.FavoriteDish ?? "It's all tasty!";         // if favorite dish is null, set to "It's all tasty!"
 
                 TopRestaurantList.Add($"#{tr.RestaurantRank}: {tr.RestaurantName} \n " +

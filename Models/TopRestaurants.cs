@@ -17,9 +17,12 @@ namespace Restaurants.Models
         public int RestaurantRank { get; }
         [Required]
         public string RestaurantName { get; set; }
+        #nullable enable
         public string? FavoriteDish { get; set; }
         [Required]
+        #nullable disable
         public string Address { get; set; }
+        #nullable enable
         public string? RestaurantPhone { get; set; }
         public string? WebsiteLink { get; set; } = "Coming soon."; // set default value
 
