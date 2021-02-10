@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Top Restaurants in Provo</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <menu class="text-center">
+        <a asp-controller="Home" asp-action="Index">Home    |</a>
+        <a asp-controller="Home" asp-action="SuggestRestaurants">Suggest Restaurants    |</a>
+        <a asp-controller="Home" asp-action="ListSuggestions">View Local Suggestions</a>
+    </menu>
+
+    <div class="text-center">
+        <h1>@ViewBag.Title</h1>
+    </div>
+
+    @RenderBody()
+
+    <br />
+    <div class="text-center">
+        <footer>Rheanna Brown, Assignment 4</footer>
+    </div>
+
+</body>
+</html>

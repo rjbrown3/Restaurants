@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Best Provo Restaurants";
+}
+
+@model IEnumerable<string>
+
+<div class="text-center">
+    <h4>This site shows the best restaurants in Provo!</h4>
+</div>
+<br />
+
+<div class="text-center">
+    <img src="~/img/provoimg.jpg" width="800" />
+</div>
+<br />
+
+<div class="text-center">
+    <h4 class="bg-light" text-white>Provo's Top 5</h4>
+    <br />
+</div>
+
+<div class="list-group">
+    <ul>
+        @foreach (string s in Model)        // list out each object in the model
+        {
+            <li class="list-group-item bg-light">@s</li>
+        }
+    </ul>
+</div>

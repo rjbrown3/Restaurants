@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Restaurants suggested by local residents";
+}
+
+@model IEnumerable<Restaurants.Models.Suggested>
+
+<div class="text-center">
+    <br />
+    <table class="table-bordered table">
+        <!--table will display list of restaurant suggestions added-->
+        <thead>
+            <tr class="d-table-row"><td>Suggested By</td><td>Restaurant Name</td><td>Favorite Dish</td><td>Phone #</td></tr>
+        </thead>
+        <tbody>
+            @foreach (Restaurants.Models.Suggested sugg in Model) //list every movie object in the model
+            {
+                <tr class="d-table-row">
+                    <td>@sugg.UserName</td>
+                    <td>@sugg.RestName</td>
+                    <td>@sugg.FavDish</td>
+                    <td>@sugg.RestPhone</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div> 
